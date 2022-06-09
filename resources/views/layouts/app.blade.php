@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
+
     <!-- Site Header -->
     @include('partials.header')
     <!-- Site Main -->
-    @include('partials.main')
+    <main>
+        @yield('content')
+    </main>
     <!-- Site Footer -->
     @include('partials.footer')
 

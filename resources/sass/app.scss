@@ -1,2 +1,74 @@
 
+/*#region Palette colori e dimensioni */
+
 @use 'bootstrap';
+/* Color palette  */
+$additional_bg_color: #FF0A0A;
+$navbar_bg_color : rgb(136, 255, 0);
+$jumbo_bg_color : rgb(14, 230, 201);
+
+/* Regola Generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+/**
+* Mixin required for recalling the measures of the root element
+* $width => Width of the container
+* $height => Height of the container
+* $background => Background Color
+*/
+
+@mixin ContentDimensions($width, $height, $background) {
+    width: $width;
+    height: $height;
+    background-color: $background;
+}
+
+/**
+* Mixin required for positioning and align of an item
+* $display => Display Flex
+* $justify => Horizontal Justify
+* $align => Vertical Align
+*/
+
+@mixin positionFlex($display, $justify, $align, $dir) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $dir;
+}
+
+/* Flex Center Center */
+.flex_cent {
+    @include positionFlex(flex, center, center, column);
+}
+/*#endregion */
+
+/*#region SiteHeader */
+
+#site_additional {
+    @include ContentDimensions(100%, 25px, $additional_bg_color);
+}
+
+#site_navbar {
+    @include ContentDimensions(100%, 120px, $navbar_bg_color);
+}
+
+#site_jumbo {
+    @include ContentDimensions(100%, 415px, $jumbo_bg_color);
+}
+
+.bordo {
+    border: 1px solid black;
+}
+
+
+/*#endregion */
+
+
+
+

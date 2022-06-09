@@ -2,8 +2,6 @@
 
 return [
     /* Database Per le Card */
-    'listCard' =>
-    [
 
         [
         "title" => "Action Comics #1000: The Deluxe Edition",
@@ -216,9 +214,7 @@ return [
             "Joëlle Jones"
         ],
     ],
-]
-
-    ];
+];
 
 
 
