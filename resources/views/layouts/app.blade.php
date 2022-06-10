@@ -15,9 +15,7 @@
     <!-- Site Header -->
     @include('partials.header')
     <!-- Site Main -->
-    <main>
-        @yield('content')
-    </main>
+    @include('partials.main')
     <!-- Site Footer -->
     @include('partials.footer')
 

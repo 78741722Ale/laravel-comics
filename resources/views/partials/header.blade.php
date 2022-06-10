@@ -1,16 +1,25 @@
-<header>
-    <div class="container-fluid p-0 flex_cent bordo">
-        <!-- Site Additional -->
-        <div id="site_additional">
-            Site Additional Goes Here
-        </div>
-        <!-- Site Navbar -->
-        <div id="site_navbar">
-            Navbar goes here
-        </div>
-        <!-- Jumbotron -->
-        <div id="site_jumbo">
-            Jumbotron goes here
+<div class="flex_cent">
+    <!-- Site Additional -->
+    <div class="flex_cent" id="site_additional">
+        <div class="row w_90 flex_end m-0 h-100 bordo">
+            <!-- Col for Power$Additional -->
+            <div class="col-2 bordo h-100">Power Visa</div>
+            <div class="col-2 bordo h-100">Additional</div>
         </div>
     </div>
-</header>
+    <!-- Site Navbar -->
+    <div class="flex_cent" id="site_navbar">
+        <div class="row w_90 flex_bet m-0 h-100 bordo">
+            <!-- Col for Logo&Navbar&Searchbar-->
+            <div class="col-2 bordo h-100">logo</div>
+            <div class="col-7 bordo h-100">Navbar</div>
+            <div class="col-2 bordo h-100">Searchbar</div>
+        </div>
+    </div>
+    <!-- Jumbotron -->
+    <div class="flex_cent" id="site_jumbo">
+        <div class="row w_90 m-0 h-100 bordo">
+            Jumbotron Goes Here
+        </div>
+    </div>
+</div>

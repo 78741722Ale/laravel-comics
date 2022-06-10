@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* Per fare a meno di Home e prendere un layout
+layouts.app
+*/
+
 Route::get('/', function () {
     $comics = config ('comics');
-    return view('home', compact('comics'));
+    return view('layouts.app', compact('comics'));
 })->name('home');

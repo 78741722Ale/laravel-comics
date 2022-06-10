@@ -1,11 +1,18 @@
 
 /*#region Palette colori e dimensioni */
-
 @use 'bootstrap';
+
+
 /* Color palette  */
 $additional_bg_color: #FF0A0A;
 $navbar_bg_color : rgb(136, 255, 0);
 $jumbo_bg_color : rgb(14, 230, 201);
+$card_bg_color : rgb(2, 133, 240);
+$icon_bg_color : rgb(240, 97, 2);
+$upper_bg_color : rgb(250, 31, 2);
+$under_bg_color : rgb(240, 2, 121);
+/* Main color palette */
+$navbar_bg_color : rgba(255, 251, 0, 0.5);
 
 /* Regola Generale */
 * {
@@ -14,6 +21,10 @@ $jumbo_bg_color : rgb(14, 230, 201);
     box-sizing: border-box
 }
 
+/* Regola al body */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 /**
 * Mixin required for recalling the measures of the root element
@@ -42,28 +53,29 @@ $jumbo_bg_color : rgb(14, 230, 201);
     flex-direction: $dir;
 }
 
-/* Flex Center Center */
-.flex_cent {
-    @include positionFlex(flex, center, center, column);
-}
+/* All Flex Positions */
+.flex_cent {@include positionFlex(flex, center, center, column); }
+.flex_around {@include positionFlex(flex, space-around, center, row); }
+.flex_bet {@include positionFlex(flex, space-between, center, row); }
+.flex_end {@include positionFlex(flex, flex-end, center, row); }
+
 /*#endregion */
 
 /*#region SiteHeader */
-
-#site_additional {
-    @include ContentDimensions(100%, 25px, $additional_bg_color);
-}
-
-#site_navbar {
-    @include ContentDimensions(100%, 120px, $navbar_bg_color);
-}
-
-#site_jumbo {
-    @include ContentDimensions(100%, 415px, $jumbo_bg_color);
-}
+#site_additional { @include ContentDimensions(100%, 25px, $additional_bg_color);}
+#site_navbar { @include ContentDimensions(100%, 120px, $navbar_bg_color); }
+#site_jumbo { @include ContentDimensions(100%, 415px, $jumbo_bg_color); }
+#site_card { @include ContentDimensions(100%, 685px, $card_bg_color); }
+#site_icon { @include ContentDimensions(100%, 160px, $icon_bg_color); }
+#footer_upper {@include ContentDimensions(100%, 410px, $upper_bg_color);}
+#footer_under {@include ContentDimensions(100%, 115px, $under_bg_color);}
 
 .bordo {
     border: 1px solid black;
+}
+
+.w_90 {
+    width: 90%;
 }
 
 

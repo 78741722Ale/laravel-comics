@@ -2,10 +2,6 @@
 
 
 @section('content')
-        <!-- Prova titoli -->
-        @forelse ($comics as $comic)
-            <h1>{{$comic['title']}}</h1>
-            @empty
-            <p>Vuoto</p>
-        @endforelse
+    <!-- Questo è un segnaposto fisso. Una mmerda di sezione da non usare per ora -->
 @endsection
+
