@@ -23,7 +23,7 @@ $navbar_bg_color : rgba(255, 251, 0, 0.5);
 
 /* Regola al body */
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /**
@@ -55,13 +55,14 @@ body {
 
 /* All Flex Positions */
 .flex_cent {@include positionFlex(flex, center, center, column); }
+.flex_cent_2 {@include positionFlex(flex, center, center, row); }
 .flex_around {@include positionFlex(flex, space-around, center, row); }
 .flex_bet {@include positionFlex(flex, space-between, center, row); }
 .flex_end {@include positionFlex(flex, flex-end, center, row); }
+.flex_start {@include positionFlex(flex, center, flex-start, row); }
 
-/*#endregion */
 
-/*#region SiteHeader */
+/* All Container Dimensions */
 #site_additional { @include ContentDimensions(100%, 25px, $additional_bg_color);}
 #site_navbar { @include ContentDimensions(100%, 120px, $navbar_bg_color); }
 #site_jumbo { @include ContentDimensions(100%, 415px, $jumbo_bg_color); }
@@ -77,8 +78,14 @@ body {
 .w_90 {
     width: 90%;
 }
+/*#endregion */
 
+/*#region SiteHeader */
 
+.card_item {
+    height: 200px;
+    width: 200px;
+}
 /*#endregion */
 
 

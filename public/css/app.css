@@ -10278,7 +10278,7 @@ textarea.form-control-lg {
 
 /* Regola al body */
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /**
@@ -10299,6 +10299,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.flex_cent_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .flex_around {
@@ -10322,8 +10329,14 @@ body {
   flex-direction: row;
 }
 
-/*#endregion */
-/*#region SiteHeader */
+.flex_start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+/* All Container Dimensions */
 #site_additional {
   width: 100%;
   height: 25px;
@@ -10372,6 +10385,13 @@ body {
 
 .w_90 {
   width: 90%;
+}
+
+/*#endregion */
+/*#region SiteHeader */
+.card_item {
+  height: 200px;
+  width: 200px;
 }
 
 /*#endregion */
