@@ -4,12 +4,62 @@
         <div class="container-xl h-100">
             <div class="row w-100 h-100 flex_bet m-0 ">
                 <!-- List Items -->
-                <div class="col-4 h-100 flex_cent_2 bg-secondary">
-                    <!-- Prova del Chiave Valore (su un singolo list item) -->
-                    @foreach ($dc_comics_list as $single_value)
-                    <!-- Questi sono singoli List Item -->
-                    <span>{{$single_value}}</span>
-                    @endforeach
+                <div class="col-5 p-2 h-100 flex_cent">
+                    <!-- List Zone -->
+                    <div class="col-12 p-0 flex_cent_2 h-75">
+                        <!-- Prima Lista -->
+                        <div class="col-4 p-0 h-100 flex_cent">
+                            <!-- Lista Superiore -->
+                            <div class="col-12 h_70 ps-2">
+                                <ul class="footer_list mt-1">
+                                    <!-- Title -->
+                                    <li class="footer_list_titles text-uppercase">Dc Comics</li>
+                                    <!-- Options (With ForEach Title) -->
+                                    @foreach ($dc_comics_list as $single_value)
+                                    <li class="footer_list_text">{{$single_value}}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            <!-- Lista Inferiore -->
+                            <div class="col-12 h_30 ps-2">
+                                <ul class="footer_list">
+                                    <!-- Title -->
+                                    <li class="footer_list_titles text-uppercase">Shop</li>
+                                    <!-- Options (With ForEach Title) -->
+                                    @foreach ($dc_comics_shop as $single_value)
+                                    <li class="footer_list_text">{{$single_value}}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Seconda Lista -->
+                        <div class="col-4 h-100 ps-2">
+                            <ul class="footer_list mt-1">
+                                <!-- Title -->
+                                <li class="footer_list_titles text-uppercase">Dc</li>
+                                <!-- Options (With ForEach Title) -->
+                                @foreach ($dc_termini as $single_value)
+                                <li class="footer_list_text">{{$single_value}}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        <!-- Terza Lista -->
+                        <div class="col-4 h-100 ps-2">
+                            <ul class="footer_list mt-1">
+                                <!-- Title -->
+                                <li class="footer_list_titles text-uppercase">Sites</li>
+                                <!-- Options (With ForEach Title) -->
+                                @foreach ($dc_sites as $single_value)
+                                <li class="footer_list_text">{{$single_value}}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Copy Text Zone -->
+                    <div class="col-12 bg-warning h-25 bordo">
+                        <!-- Text Goes Here -->
+                    </div>
+
                 </div>
                 <!-- Logo -->
                 <div class="col-5 h-100 flex_cent_2 bg-success">DC Logo Goes Here</div>

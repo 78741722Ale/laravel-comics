@@ -23,10 +23,13 @@ Route::get('/', function () {
     $icons = config('db.icons');
     $apps = config('db.apps');
     $dc_comics_list = config('db.footer_list.dc_comics_list');
+    $dc_comics_shop = config('db.footer_list.dc_shop');
+    $dc_termini = config('db.footer_list.dc_termini');
+    $dc_sites = config('db.footer_list.dc_sites');
     /* dd($dc_comics_list); */
     /* dd($icons); */
     /* Icone del Footer */
-    return view('layouts.app', compact('fumetti', 'icons', 'apps', 'dc_comics_list'));
+    return view('layouts.app', compact('fumetti', 'icons', 'apps', 'dc_comics_list', 'dc_comics_shop', 'dc_termini', 'dc_sites'));
 })->name('app');
 
-/* Prova di una rotta */
+

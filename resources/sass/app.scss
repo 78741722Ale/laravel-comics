@@ -2,6 +2,13 @@
 /*#region Palette colori e dimensioni */
 @use 'bootstrap';
 
+/* Regola Generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
 /* Color palette  */
 $additional_bg_color: rgba(2, 130, 249, 1);
 $additional_text_color: rgba(255, 255, 255, 1);
@@ -16,14 +23,9 @@ $upper_bg_color : black;
 $upper_text_color : rgba(255, 255, 255, 1);
 $under_bg_color : rgba(48, 48, 48, 1);
 $under_text_color : rgba(255, 255, 255, 1);
-/* Regola Generale */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-}
 
-/* Regola al body */
+
+/* Regola al body ( font) */
 body {
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -32,6 +34,7 @@ body {
     border: 1px solid black;
 }
 
+/*#region Mixin Content Dimensions */
 
 /**
 * Mixin required for recalling the measures of the root element
@@ -53,9 +56,12 @@ body {
 #site_jumbo { @include ContentDimensions(100%, 300px, $jumbo_bg_color, black); }
 #site_card { @include ContentDimensions(100%, 495px, $card_bg_color, $card_text_color); }
 #site_icon { @include ContentDimensions(100%, 115px, $icon_bg_color, $icon_text_color); }
-#footer_upper {@include ContentDimensions(100%, 300px, $upper_bg_color, $upper_text_color);}
+#footer_upper {@include ContentDimensions(100%, 375px, $upper_bg_color, $upper_text_color);}
 #footer_under {@include ContentDimensions(100%, 80px, $under_bg_color, $under_text_color);}
 
+/*#endregion */
+
+/*#region Mixin Position Flex */
 
 /**
 * Mixin required for positioning and align of an item
@@ -80,12 +86,9 @@ body {
 .flex_start {@include positionFlex(flex, center, flex-start, row); }
 .flex_start_2 {@include positionFlex(flex, flex-start, center, row); }
 .flex_evenly {@include positionFlex(flex, space-evenly, center, row); }
+/*#endregion */
 
-/* Width for the Row */
-.w_90 {
-    width: 90%;
-}
-
+/*#region Mixin Font */
 
 /**
 * Mixin required for text stile and font size
@@ -93,23 +96,51 @@ body {
 * $size => Font Size
 * $color => Text Color
 * $peso => font-weight
+* $top => padding top
 */
-@mixin fontStile($align, $size, $color, $peso) {
+@mixin fontStile($align, $size, $color, $peso, $top) {
     text-align: $align;
     font-size: $size;
     color: $color;
     font-weight: $peso;
+    padding-top: $top;
 }
 
-.app_text {@include fontStile(left, 0.9rem, $icon_text_color, 200);}
-
-
+.app_text {@include fontStile(left, 0.9rem, $icon_text_color, 200, 0);}
+.footer_list_titles {@include fontStile(left, 1.2rem, $icon_text_color, bold, 0);}
+.footer_list_text {@include fontStile(left, 0.8rem, $navbar_text_color, 300, 0.15rem);}
 
 /*#endregion */
 
+/*#region Mixin Lists */
 
+/**
+* Mixin required for Unordered Lists
+* $padding => Padding Left for removing spacing
+* $stile => List stile (remove or change the style of the single list item)
+*/
+@mixin listStile($padding, $top, $stile) {
+    padding-left: $padding;
+    padding-top: $top;
+    list-style: $stile;
+}
 
+.footer_list {@include listStile(0, 0, none);}
+/*#endregion */
 
+/*#region Mixin Heigth */
+
+/**
+* Mixin required for Variables Heigth
+* $altezza => Height. It can been in pixel or %
+*/
+@mixin listOfHeight($altezza) {
+    height: $altezza;
+}
+.h_70 {@include listOfHeight(70%);}
+.h_30 {@include listOfHeight(30%);}
+
+/*#endregion */
 
 /*#region SiteHeader */
 
