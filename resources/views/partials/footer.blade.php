@@ -4,7 +4,13 @@
         <div class="container-xl h-100">
             <div class="row w-100 h-100 flex_bet m-0 ">
                 <!-- List Items -->
-                <div class="col-4 h-100 flex_cent_2 bg-secondary">List Goes Here</div>
+                <div class="col-4 h-100 flex_cent_2 bg-secondary">
+                    <!-- Prova del Chiave Valore (su un singolo list item) -->
+                    @foreach ($dc_comics_list as $single_value)
+                    <!-- Questi sono singoli List Item -->
+                    <span>{{$single_value}}</span>
+                    @endforeach
+                </div>
                 <!-- Logo -->
                 <div class="col-5 h-100 flex_cent_2 bg-success">DC Logo Goes Here</div>
                 </div>

@@ -22,7 +22,11 @@ Route::get('/', function () {
     $fumetti = config('comics.fumetti');
     $icons = config('db.icons');
     $apps = config('db.apps');
+    $dc_comics_list = config('db.footer_list.dc_comics_list');
+    /* dd($dc_comics_list); */
     /* dd($icons); */
     /* Icone del Footer */
-    return view('layouts.app', compact('fumetti', 'icons', 'apps'));
+    return view('layouts.app', compact('fumetti', 'icons', 'apps', 'dc_comics_list'));
 })->name('app');
+
+/* Prova di una rotta */

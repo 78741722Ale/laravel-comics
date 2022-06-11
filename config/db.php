@@ -51,4 +51,11 @@ return  [
             "text" => "Dc Power Visa"
         ],
     ],
+    'footer_list' => [
+        'dc_comics_list' => ["Characters","Comics","Movies","TV","Games","Videos","News"],
+        'dc_shop' => ["Shop DC","Shop DC Collectibles"],
+        'dc_termini' => ["Terms Of Use","Privacy policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"],
+        'dc_sites' => ["DC","MAD Magazine","DC Kids","DC Universe","DC Power Visa"]
+    ],
 ];
+
