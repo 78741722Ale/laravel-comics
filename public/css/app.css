@@ -10293,49 +10293,49 @@ body {
 /* All Container Dimensions */
 #site_additional {
   width: 100%;
-  height: 25px;
+  height: 20px;
   background-color: rgb(2, 130, 249);
   color: rgb(255, 255, 255);
 }
 
 #site_navbar {
   width: 100%;
-  height: 120px;
+  height: 85px;
   background-color: rgb(255, 255, 255);
   color: rgb(75, 75, 74);
 }
 
 #site_jumbo {
   width: 100%;
-  height: 415px;
+  height: 300px;
   background-color: rgba(14, 230, 201, 0);
   color: black;
 }
 
 #site_card {
   width: 100%;
-  height: 685px;
+  height: 495px;
   background-color: rgb(28, 28, 28);
   color: rgb(255, 255, 255);
 }
 
 #site_icon {
   width: 100%;
-  height: 160px;
+  height: 115px;
   background-color: rgb(2, 130, 249);
   color: rgb(255, 255, 255);
 }
 
 #footer_upper {
   width: 100%;
-  height: 410px;
+  height: 300px;
   background-color: black;
   color: rgb(255, 255, 255);
 }
 
 #footer_under {
   width: 100%;
-  height: 115px;
+  height: 80px;
   background-color: rgb(48, 48, 48);
   color: rgb(255, 255, 255);
 }

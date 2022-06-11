@@ -48,13 +48,13 @@ body {
 }
 
 /* All Container Dimensions */
-#site_additional { @include ContentDimensions(100%, 25px, $additional_bg_color, $additional_text_color);}
-#site_navbar { @include ContentDimensions(100%, 120px, $navbar_bg_color, $navbar_text_color); }
-#site_jumbo { @include ContentDimensions(100%, 415px, $jumbo_bg_color, black); }
-#site_card { @include ContentDimensions(100%, 685px, $card_bg_color, $card_text_color); }
-#site_icon { @include ContentDimensions(100%, 160px, $icon_bg_color, $icon_text_color); }
-#footer_upper {@include ContentDimensions(100%, 410px, $upper_bg_color, $upper_text_color);}
-#footer_under {@include ContentDimensions(100%, 115px, $under_bg_color, $under_text_color);}
+#site_additional { @include ContentDimensions(100%, 20px, $additional_bg_color, $additional_text_color);}
+#site_navbar { @include ContentDimensions(100%, 85px, $navbar_bg_color, $navbar_text_color); }
+#site_jumbo { @include ContentDimensions(100%, 300px, $jumbo_bg_color, black); }
+#site_card { @include ContentDimensions(100%, 495px, $card_bg_color, $card_text_color); }
+#site_icon { @include ContentDimensions(100%, 115px, $icon_bg_color, $icon_text_color); }
+#footer_upper {@include ContentDimensions(100%, 300px, $upper_bg_color, $upper_text_color);}
+#footer_under {@include ContentDimensions(100%, 80px, $under_bg_color, $under_text_color);}
 
 
 /**
