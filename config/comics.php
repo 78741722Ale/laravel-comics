@@ -215,28 +215,6 @@ return [
                         ],
                     ],
     ],
-    'icons' => [
-        [
-            "img" => "img/footer-facebook.png",
-            "alt" => "#"
-        ],
-        [
-            "img" => "img/footer-twitter.png",
-            "alt" => "#"
-        ],
-        [
-            "img" => "img/footer-youtube.png",
-            "alt" => "#"
-        ],
-        [
-            "img" => "img/footer-pinterest.png",
-            "alt" => "#"
-        ],
-        [
-            "img" => "img/footer-periscope.png",
-            "alt" => "#"
-        ],
-    ],
 ];
 
 

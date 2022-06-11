@@ -19,20 +19,26 @@
     <!-- Site Icons -->
     <div class="flex_cent" id="site_icon">
         <div class="container-xl h-100">
-            <div class="row flex_bet w-100 m-0 h-100">
+            <div class="row-cols-5 flex_cent_2 w-100 m-0 h-100">
                 <!-- 1 Col (Sono dinamiche)-->
-                <div class="col-2 mx-3 bg-danger h-100 flex_cent_2">Icons Goes Here</div>
-                <!-- 2 Col -->
-                <div class="col-2 mx-3 bg-danger h-100 flex_cent_2">Icons Goes Here</div>
-                <!-- 3 Col -->
-                <div class="col-2 mx-3 bg-danger h-100 flex_cent_2">Icons Goes Here</div>
-                <!-- 4 Col -->
-                <div class="col-2 mx-3 bg-danger h-100 flex_cent_2">Icons Goes Here</div>
-                <!-- 5 Col -->
-                <div class="col-2 mx-3 bg-danger h-100 flex_cent_2">Icons Goes Here</div>
+                @forelse ($apps as $app)
+                <div class="col p-0 h-100 flex_cent_2">
+                    <!-- Image -->
+                    <div class="col-4 h-100 flex_cent_2">
+                        <img class="w-50 h-50" src="{{ $app['img'] }}" alt="{{ $app['alt'] }}"></li>
+                    </div>
+                    <!-- Text -->
+                    <div class="col-8 h-100 flex_start_2">
+                        <span class="text-uppercase app_text">{{ $app['text'] }}</span>
+                    </div>
+                </div>
+                @empty
+                <p>Qui non c'è niente...</p>
+                @endforelse
             </div>
         </div>
     </div>
 </div>
+
 
 

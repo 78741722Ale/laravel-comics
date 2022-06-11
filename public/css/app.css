@@ -10408,6 +10408,20 @@ body {
   width: 90%;
 }
 
+/**
+* Mixin required for text stile and font size
+* $align => Text Align
+* $size => Font Size
+* $color => Text Color
+* $peso => font-weight
+*/
+.app_text {
+  text-align: left;
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+}
+
 /*#endregion */
 /*#region SiteHeader */
 /*#endregion */

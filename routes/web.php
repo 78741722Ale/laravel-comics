@@ -20,8 +20,9 @@ layouts.app
 Route::get('/', function () {
     /* Fumetti Completi */
     $fumetti = config('comics.fumetti');
-    $icons = config('comics.icons');
+    $icons = config('db.icons');
+    $apps = config('db.apps');
     /* dd($icons); */
     /* Icone del Footer */
-    return view('layouts.app', compact('fumetti', 'icons'));
-})->name('home');
+    return view('layouts.app', compact('fumetti', 'icons', 'apps'));
+})->name('app');

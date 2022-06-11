@@ -85,7 +85,31 @@ body {
 .w_90 {
     width: 90%;
 }
+
+
+/**
+* Mixin required for text stile and font size
+* $align => Text Align
+* $size => Font Size
+* $color => Text Color
+* $peso => font-weight
+*/
+@mixin fontStile($align, $size, $color, $peso) {
+    text-align: $align;
+    font-size: $size;
+    color: $color;
+    font-weight: $peso;
+}
+
+.app_text {@include fontStile(left, 0.9rem, $icon_text_color, 200);}
+
+
+
 /*#endregion */
+
+
+
+
 
 /*#region SiteHeader */
 
