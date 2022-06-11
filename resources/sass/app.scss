@@ -56,8 +56,17 @@ body {
 #site_jumbo { @include ContentDimensions(100%, 300px, $jumbo_bg_color, black); }
 #site_card { @include ContentDimensions(100%, 495px, $card_bg_color, $card_text_color); }
 #site_icon { @include ContentDimensions(100%, 115px, $icon_bg_color, $icon_text_color); }
-#footer_upper {@include ContentDimensions(100%, 375px, $upper_bg_color, $upper_text_color);}
 #footer_under {@include ContentDimensions(100%, 80px, $under_bg_color, $under_text_color);}
+#footer_upper {
+    width: 100%;
+    height: 425px;
+    color: $upper_text_color;
+    /* Background Color */
+    background-size: 100% 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/footer-bg.jpg");
+}
 
 /*#endregion */
 
@@ -179,4 +188,13 @@ body {
     color: black;
     background-color: $additional_bg_color;
 }
+
+.dc_logo {
+    background-image: url("../img/dc-logo-bg.png");
+    background-size: 100% 110%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 /*#endregion */

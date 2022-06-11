@@ -4,7 +4,7 @@
         <div class="container-xl h-100">
             <div class="row w-100 h-100 flex_bet m-0 ">
                 <!-- List Items -->
-                <div class="col-5 p-2 h-100 flex_cent">
+                <div class="col-5 p-3 h-100 flex_cent">
                     <!-- List Zone -->
                     <div class="col-12 p-0 flex_cent_2 h-75">
                         <!-- Prima Lista -->
@@ -59,10 +59,9 @@
                     <div class="col-12 bg-warning h-25 bordo">
                         <!-- Text Goes Here -->
                     </div>
-
                 </div>
                 <!-- Logo -->
-                <div class="col-5 h-100 flex_cent_2 bg-success">DC Logo Goes Here</div>
+                <div class="col-5 h-100 dc_logo"></div>
                 </div>
             </div>
         </div>
