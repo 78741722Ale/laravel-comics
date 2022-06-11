@@ -78,6 +78,8 @@ body {
 .flex_bet {@include positionFlex(flex, space-between, center, row); }
 .flex_end {@include positionFlex(flex, flex-end, center, row); }
 .flex_start {@include positionFlex(flex, center, flex-start, row); }
+.flex_start_2 {@include positionFlex(flex, flex-start, center, row); }
+.flex_evenly {@include positionFlex(flex, space-evenly, center, row); }
 
 /* Width for the Row */
 .w_90 {
@@ -89,6 +91,37 @@ body {
 
 /*#endregion */
 
+/*#region SiteMain */
 
+/*#endregion */
 
-
+/*#region SiteFooter */
+.follow {
+    font-weight: 900;
+    text-decoration: none;
+}
+.social {
+    /* List item */
+    ul {
+        padding-left: 0%;
+        list-style: none;
+        color: $additional_bg_color;
+        text-transform: uppercase;
+        li {
+            cursor: pointer;
+        }
+    }
+}
+.sign {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    background-color: inherit;
+    border: 2px solid $additional_bg_color;
+    color: $additional_text_color;
+}
+.sign:hover {
+    color: black;
+    background-color: $additional_bg_color;
+}
+/*#endregion */

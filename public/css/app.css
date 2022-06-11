@@ -10389,6 +10389,20 @@ body {
   flex-direction: row;
 }
 
+.flex_start_2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.flex_evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
 /* Width for the Row */
 .w_90 {
   width: 90%;
@@ -10396,4 +10410,40 @@ body {
 
 /*#endregion */
 /*#region SiteHeader */
+/*#endregion */
+/*#region SiteMain */
+/*#endregion */
+/*#region SiteFooter */
+.follow {
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.social {
+  /* List item */
+}
+.social ul {
+  padding-left: 0%;
+  list-style: none;
+  color: rgb(2, 130, 249);
+  text-transform: uppercase;
+}
+.social ul li {
+  cursor: pointer;
+}
+
+.sign {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  background-color: inherit;
+  border: 2px solid rgb(2, 130, 249);
+  color: rgb(255, 255, 255);
+}
+
+.sign:hover {
+  color: black;
+  background-color: rgb(2, 130, 249);
+}
+
 /*#endregion */

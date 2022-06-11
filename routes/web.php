@@ -18,6 +18,10 @@ layouts.app
 */
 
 Route::get('/', function () {
-    $comics = config ('comics');
-    return view('layouts.app', compact('comics'));
+    /* Fumetti Completi */
+    $fumetti = config('comics.fumetti');
+    $icons = config('comics.icons');
+    /* dd($icons); */
+    /* Icone del Footer */
+    return view('layouts.app', compact('fumetti', 'icons'));
 })->name('home');
