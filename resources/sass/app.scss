@@ -2,18 +2,20 @@
 /*#region Palette colori e dimensioni */
 @use 'bootstrap';
 
-
 /* Color palette  */
-$additional_bg_color: #FF0A0A;
-$navbar_bg_color : rgb(136, 255, 0);
-$jumbo_bg_color : rgb(14, 230, 201);
-$card_bg_color : rgb(2, 133, 240);
-$icon_bg_color : rgb(240, 97, 2);
-$upper_bg_color : rgb(250, 31, 2);
-$under_bg_color : rgb(240, 2, 121);
-/* Main color palette */
-$navbar_bg_color : rgba(255, 251, 0, 0.5);
-
+$additional_bg_color: rgba(2, 130, 249, 1);
+$additional_text_color: rgba(255, 255, 255, 1);
+$navbar_bg_color : rgba(255, 255, 255, 1);
+$navbar_text_color: rgba(75, 75, 74, 1);
+$jumbo_bg_color : rgba(14, 230, 201, 0);
+$card_bg_color : rgba(28, 28, 28, 1);
+$card_text_color : rgba(255, 255, 255, 1);
+$icon_bg_color : rgba(2, 130, 249, 1);
+$icon_text_color : rgba(255, 255, 255, 1);
+$upper_bg_color : black;
+$upper_text_color : rgba(255, 255, 255, 1);
+$under_bg_color : rgba(48, 48, 48, 1);
+$under_text_color : rgba(255, 255, 255, 1);
 /* Regola Generale */
 * {
     margin: 0;
@@ -26,6 +28,11 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.bordo {
+    border: 1px solid black;
+}
+
+
 /**
 * Mixin required for recalling the measures of the root element
 * $width => Width of the container
@@ -33,11 +40,22 @@ body {
 * $background => Background Color
 */
 
-@mixin ContentDimensions($width, $height, $background) {
+@mixin ContentDimensions($width, $height, $background, $color) {
     width: $width;
     height: $height;
     background-color: $background;
+    color: $color;
 }
+
+/* All Container Dimensions */
+#site_additional { @include ContentDimensions(100%, 25px, $additional_bg_color, $additional_text_color);}
+#site_navbar { @include ContentDimensions(100%, 120px, $navbar_bg_color, $navbar_text_color); }
+#site_jumbo { @include ContentDimensions(100%, 415px, $jumbo_bg_color, transparent); }
+#site_card { @include ContentDimensions(100%, 685px, $card_bg_color, $card_text_color); }
+#site_icon { @include ContentDimensions(100%, 160px, $icon_bg_color, $icon_text_color); }
+#footer_upper {@include ContentDimensions(100%, 410px, $upper_bg_color, $upper_text_color);}
+#footer_under {@include ContentDimensions(100%, 115px, $under_bg_color, $under_text_color);}
+
 
 /**
 * Mixin required for positioning and align of an item
@@ -61,20 +79,7 @@ body {
 .flex_end {@include positionFlex(flex, flex-end, center, row); }
 .flex_start {@include positionFlex(flex, center, flex-start, row); }
 
-
-/* All Container Dimensions */
-#site_additional { @include ContentDimensions(100%, 25px, $additional_bg_color);}
-#site_navbar { @include ContentDimensions(100%, 120px, $navbar_bg_color); }
-#site_jumbo { @include ContentDimensions(100%, 415px, $jumbo_bg_color); }
-#site_card { @include ContentDimensions(100%, 685px, $card_bg_color); }
-#site_icon { @include ContentDimensions(100%, 160px, $icon_bg_color); }
-#footer_upper {@include ContentDimensions(100%, 410px, $upper_bg_color);}
-#footer_under {@include ContentDimensions(100%, 115px, $under_bg_color);}
-
-.bordo {
-    border: 1px solid black;
-}
-
+/* Width for the Row */
 .w_90 {
     width: 90%;
 }
@@ -82,10 +87,6 @@ body {
 
 /*#region SiteHeader */
 
-.card_item {
-    height: 200px;
-    width: 200px;
-}
 /*#endregion */
 
 
