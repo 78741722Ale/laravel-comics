@@ -20,12 +20,4 @@
             </div>
         </div>
     </div>
-    <!-- Jumbotron -->
-    <div class="flex_cent" id="site_jumbo">
-        <div class="container-xl h-100">
-            <div class="row w-100 m-0 flex_cent_2 h-100">
-                Jumbotron Goes Here
-            </div>
-        </div>
-    </div>
 </div>

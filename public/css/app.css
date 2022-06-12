@@ -10274,12 +10274,12 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
-/* Color palette  */
-/* Regola al body ( font) */
+/* Regola al body (font - family) */
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Color palette  */
 .bordo {
   border: 1px solid black;
 }
@@ -10306,16 +10306,9 @@ body {
   color: rgb(75, 75, 74);
 }
 
-#site_jumbo {
-  width: 100%;
-  height: 300px;
-  background-color: rgba(14, 230, 201, 0);
-  color: black;
-}
-
 #site_card {
   width: 100%;
-  height: 495px;
+  height: 550px;
   background-color: rgb(28, 28, 28);
   color: rgb(255, 255, 255);
 }
@@ -10334,16 +10327,32 @@ body {
   color: rgb(255, 255, 255);
 }
 
+/* Container with background-img */
 #footer_upper {
   width: 100%;
   height: 425px;
   color: rgb(255, 255, 255);
-  /* Background Color */
+  /* Background */
   background-size: 100% 100%;
   -o-object-fit: contain;
      object-fit: contain;
   background-repeat: no-repeat;
   background-image: url("../img/footer-bg.jpg");
+}
+
+#site_jumbo {
+  /* @include ContentDimensions(100%, 350px, $jumbo_bg_color, black); */
+  width: 100%;
+  height: 350px;
+  color: rgba(14, 230, 201, 0);
+  /* Background */
+  background-size: 100% 250%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/jumbotron.jpg");
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /*#endregion */
