@@ -14,12 +14,12 @@
         <div class="container-xl h-100">
             <div class="row w-100 flex_bet m-0 h-100">
                 <!-- Col for Logo&Navbar&Searchbar-->
-                <!-- Logo -->
+                <!-- Logo (OK FATTO) -->
                 <div class="col-1 p-0 flex_start_2 h-100">
                     <img src="{{ asset('img/dc-logo.png') }}" alt="DC Logo">
                 </div>
-                <!-- Navbar -->
-                <div class="col-9 h-100">
+                <!-- Navbar (OK FATTO-FORSE) -->
+                <div class="col-8 p-0 h-100">
                     <ul class="flex_evenly h-100">
                         @foreach ($nav_links as $element)
                         <!-- Sacrificato $element['rotta'] x Index, solo per attivare classe attiva su comics -->
@@ -28,7 +28,12 @@
                     </ul>
                 </div>
                 <!-- Searchbar -->
-                <div class="col-2 flex_cent_2 bg-warning h-100">Searchbar</div>
+                <div class="col-3 p-0 flex_end h-100">
+                    <form class="flex_end ">
+                        <input class="form-control border-bottom me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary btn-outline-ligth" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

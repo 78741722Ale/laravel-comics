@@ -10439,21 +10439,21 @@ body {
   height: 75px;
 }
 
-.col-9 {
+.col-8 {
   /* List */
   /* List item */
   /* Ancor Tag */
   /* Effect on Hover */
   /* Active Class */
 }
-.col-9 ul {
+.col-8 ul {
   list-style: none;
 }
-.col-9 li {
+.col-8 li {
   padding-left: 0;
   margin-bottom: 0;
 }
-.col-9 a {
+.col-8 a {
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(75, 75, 74);
@@ -10461,11 +10461,11 @@ body {
   font-weight: 700;
   padding-bottom: 1.8rem;
 }
-.col-9 a:hover {
+.col-8 a:hover {
   border-bottom: 5px solid rgb(2, 130, 249);
   color: rgb(2, 130, 249);
 }
-.col-9 .active {
+.col-8 .active {
   border-bottom: 5px solid rgb(2, 130, 249);
   color: rgb(2, 130, 249);
 }

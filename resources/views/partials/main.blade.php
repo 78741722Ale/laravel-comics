@@ -8,7 +8,7 @@
             </div>
         </div>
     </div>
-    <!-- Site Cards -->
+    <!-- Site Cards (OK FATTO) -->
     <div class="flex_cent" id="site_card">
         <div class="container-xl h-100">
             <div class="w-100 p-5 gap-2 flex_cent_2 h-100 flex-wrap">
@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <!-- Site Icons -->
+    <!-- Site Icons (OK FATTO) -->
     <div class="flex_cent" id="site_icon">
         <div class="container-xl h-100">
             <div class="row-cols-5 flex_cent_2 w-100 m-0 h-100">
