@@ -60,9 +60,54 @@ return  [
     'navbar_list' => [
         [
             "rotta" => "Route::currentRouteName()",
-            "ref" => "home",
-            "index" => "Home"
-        ]
+            "ref" => "characters",
+            "index" => "characters"
+        ],
+        [
+            "rotta" => "Route::currentRouteName()",
+            "ref" => "comics",
+            "index" => "comics"
+        ],
+        [
+            "rotta" => "Route::currentRouteName()",
+            "ref" => "movies",
+            "index" => "movies"
+        ],
+        [
+            "rotta" => "Route::currentRouteName()",
+            "ref" => "tv",
+            "index" => "tv"
+        ],
+        [
+            "rotta" => "Route::currentRouteName()",
+            "ref" => "games",
+            "index" => "games"
+        ],
+        [
+            "rotta" => "Route::currentRouteName()",
+            "ref" => "collectibles",
+            "index" => "collectibles"
+        ],
+        [
+            "rotta" => "Route::currentRouteName()",
+            "ref" => "videos",
+            "index" => "videos"
+        ],
+        [
+            "rotta" => "Route::currentRouteName()",
+            "ref" => "fans",
+            "index" => "fans"
+        ],
+        [
+            "rotta" => "Route::currentRouteName()",
+            "ref" => "news",
+            "index" => "news"
+        ],
+        [
+            "rotta" => "Route::currentRouteName()",
+            "ref" => "shop",
+            "index" => "shop"
+        ],
     ]
 ];
 

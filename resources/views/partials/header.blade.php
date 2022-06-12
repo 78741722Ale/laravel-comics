@@ -14,14 +14,19 @@
         <div class="container-xl h-100">
             <div class="row w-100 flex_bet m-0 h-100">
                 <!-- Col for Logo&Navbar&Searchbar-->
-                <div class="col-2 flex_cent_2 bg-warning h-100">logo</div>
-                <div class="col-7 flex_cent_2 bg-warning h-100">
-                    <nav>
-                        @foreach ($nav_links as $single)
-                        <a class="nav-link {{$single['rotta']}} " href="{{$single['ref']}}">{{$single['index']}}</a>
-                        @endforeach
-                    </nav>
+                <!-- Logo -->
+                <div class="col-1 p-0 flex_start_2 h-100">
+                    <img src="{{ asset('img/dc-logo.png') }}" alt="DC Logo">
                 </div>
+                <!-- Navbar -->
+                <div class="col-9 h-100">
+                    <ul class="flex_evenly h-100 bordo">
+                        @foreach ($nav_links as $element)
+                        <li><a class="{{$element['rotta']}} " href="{{$element['ref']}}">{{$element['index']}}</a></li>
+                        @endforeach
+                    </ul>
+                </div>
+                <!-- Searchbar -->
                 <div class="col-2 flex_cent_2 bg-warning h-100">Searchbar</div>
             </div>
         </div>

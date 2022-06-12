@@ -10434,6 +10434,34 @@ body {
   color: rgb(75, 75, 74);
 }
 
+.col-1 img {
+  width: 75px;
+  height: 75px;
+}
+
+.col-9 {
+  /* List item */
+}
+.col-9 ul {
+  list-style: none;
+}
+.col-9 li {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.col-9 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(75, 75, 74);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding-bottom: 1.8rem;
+}
+.col-9 a:hover {
+  border-bottom: 5px solid rgb(2, 130, 249);
+  color: rgb(2, 130, 249);
+}
+
 /*#endregion */
 /*#region SiteMain */
 /* Main Container Dimensions */

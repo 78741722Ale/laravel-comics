@@ -138,6 +138,39 @@ $under_text_color : rgba(255, 255, 255, 1);
 #site_additional { @include ContentDimensions(100%, 20px, $additional_bg_color, $additional_text_color);}
 #site_navbar { @include ContentDimensions(100%, 85px, $navbar_bg_color, $navbar_text_color); }
 
+// Dimensioni del logo
+.col-1 {
+    // Annidamento
+    img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+.col-9 {
+    /* List item */
+    ul {
+        list-style: none;
+    }
+    li {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $navbar_text_color;
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding-bottom: 1.8rem;
+    }
+    a:hover {
+        border-bottom: 5px solid $additional_bg_color;
+        color: $additional_bg_color;
+    }
+}
+
+
 /*#endregion */
 
 /*#region SiteMain */
