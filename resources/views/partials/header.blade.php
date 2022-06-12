@@ -4,8 +4,12 @@
         <div class="container-xl h-100">
             <div class="row w-100 flex_end m-0 h-100">
                 <!-- Col for Power$Additional -->
-                <div class="col-2 flex_cent_2 bg-danger h-100">Power Visa</div>
-                <div class="col-2 flex_cent_2 bg-danger h-100">Additional</div>
+                <div class="col-2 additional_text flex_start_2 h-100">
+                    <span>Dc Power<sup>sm</sup> Visa</span>
+                </div>
+                <div class="col-2 additional_text flex_end h-100">
+                    <span>Additional Dc Sites</span>
+                </div>
             </div>
         </div>
     </div>
@@ -27,7 +31,7 @@
                         @endforeach
                     </ul>
                 </div>
-                <!-- Searchbar -->
+                <!-- Searchbar (OK FATTO-FORSE) -->
                 <div class="col-3 p-0 flex_end h-100">
                     <form class="flex_end ">
                         <input class="form-control border-bottom me-2" type="search" placeholder="Search" aria-label="Search">

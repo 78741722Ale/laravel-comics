@@ -138,6 +138,20 @@ $under_text_color : rgba(255, 255, 255, 1);
 #site_additional { @include ContentDimensions(100%, 20px, $additional_bg_color, $additional_text_color);}
 #site_navbar { @include ContentDimensions(100%, 85px, $navbar_bg_color, $navbar_text_color); }
 
+.additional_text {
+    span {
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+    sup {
+        font-size: 0.5rem;
+        font-weight: 600;
+    }
+}
+
+
+
 // Dimensioni del logo
 .col-1 {
     // Annidamento
