@@ -96,10 +96,6 @@ $under_text_color : rgba(255, 255, 255, 1);
     padding-top: $top;
 }
 
-.app_text {@include fontStile(left, 0.9rem, $icon_text_color, 200, 0);}
-.footer_list_titles {@include fontStile(left, 1.2rem, $icon_text_color, bold, 0);}
-.footer_list_text {@include fontStile(left, 0.8rem, $navbar_text_color, 300, 0.15rem);}
-
 /*#endregion */
 
 /*#region Mixin Lists */
@@ -132,6 +128,8 @@ $under_text_color : rgba(255, 255, 255, 1);
 
 /*#endregion */
 
+/*#endregion */
+
 /*#region SiteHeader */
 
 /* Header Container Dimensions */
@@ -149,8 +147,6 @@ $under_text_color : rgba(255, 255, 255, 1);
         font-weight: 600;
     }
 }
-
-
 
 // Dimensioni del logo
 .col-1 {
@@ -247,6 +243,21 @@ $under_text_color : rgba(255, 255, 255, 1);
     object-fit: contain;
     background-repeat: no-repeat;
     background-image: url("../img/footer-bg.jpg");
+}
+
+.app_text {@include fontStile(left, 0.9rem, $icon_text_color, 200, 0);}
+.footer_list_titles {@include fontStile(left, 1.2rem, $icon_text_color, bold, 0);}
+.footer_list_text {@include fontStile(left, 0.8rem, $navbar_text_color, 300, 0.15rem);}
+
+
+.copy_text {
+    text-align: left;
+    font-size: 0.8rem;
+    color: $navbar_text_color;
+    font-weight: 300;
+    a {
+        text-decoration: none;
+    }
 }
 
 .follow {

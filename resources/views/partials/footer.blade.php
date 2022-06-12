@@ -1,11 +1,11 @@
 <div class="flex_cent">
-    <!-- Site Cards -->
+    <!-- Site Information (FATTO) -->
     <div class="flex_cent" id="footer_upper">
         <div class="container-xl h-100">
             <div class="row w-100 h-100 flex_bet m-0 ">
                 <!-- List Items -->
                 <div class="col-5 p-3 h-100 flex_cent">
-                    <!-- List Zone -->
+                    <!-- List Zone (FATTO) -->
                     <div class="col-12 p-0 flex_cent_2 h-75">
                         <!-- Prima Lista -->
                         <div class="col-4 p-0 h-100 flex_cent">
@@ -55,18 +55,22 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- Copy Text Zone -->
-                    <div class="col-12 bg-warning h-25 bordo">
-                        <!-- Text Goes Here -->
+                    <!-- Copy Text Zone (FATTO) -->
+                    <div class="col-12 copy_text flex_end flex-column h-25">
+                        <p class="ms-2">
+                            All Site Content TM and &copy 2020 DC Entertainment,
+                            unless otherwhise <a href="#">noted here</a>. All rights reserved.
+                            <a href="#">Cookie Settings</a>
+                        </p>
                     </div>
                 </div>
-                <!-- Logo -->
+                <!-- Logo (FATTO) -->
                 <div class="col-5 h-100 dc_logo"></div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Site Icons -->
+    <!-- Site Footer icons (FATTO) -->
     <div class="flex_cent" id="footer_under">
         <div class="container-xl h-100">
             <div class="row w-100 flex_bet m-0 h-100">

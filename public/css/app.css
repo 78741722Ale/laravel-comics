@@ -10366,30 +10366,6 @@ body {
 * $peso => font-weight
 * $top => padding top
 */
-.app_text {
-  text-align: left;
-  font-size: 0.9rem;
-  color: rgb(255, 255, 255);
-  font-weight: 200;
-  padding-top: 0;
-}
-
-.footer_list_titles {
-  text-align: left;
-  font-size: 1.2rem;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  padding-top: 0;
-}
-
-.footer_list_text {
-  text-align: left;
-  font-size: 0.8rem;
-  color: rgb(75, 75, 74);
-  font-weight: 300;
-  padding-top: 0.15rem;
-}
-
 /*#endregion */
 /*#region Mixin Lists */
 /**
@@ -10417,6 +10393,7 @@ body {
   height: 30%;
 }
 
+/*#endregion */
 /*#endregion */
 /*#region SiteHeader */
 /* Header Container Dimensions */
@@ -10549,6 +10526,40 @@ body {
      object-fit: contain;
   background-repeat: no-repeat;
   background-image: url("../img/footer-bg.jpg");
+}
+
+.app_text {
+  text-align: left;
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  padding-top: 0;
+}
+
+.footer_list_titles {
+  text-align: left;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding-top: 0;
+}
+
+.footer_list_text {
+  text-align: left;
+  font-size: 0.8rem;
+  color: rgb(75, 75, 74);
+  font-weight: 300;
+  padding-top: 0.15rem;
+}
+
+.copy_text {
+  text-align: left;
+  font-size: 0.8rem;
+  color: rgb(75, 75, 74);
+  font-weight: 300;
+}
+.copy_text a {
+  text-decoration: none;
 }
 
 .follow {
