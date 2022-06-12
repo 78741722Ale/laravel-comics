@@ -60,12 +60,12 @@ return  [
     'navbar_list' => [
         [
             "rotta" => "Route::currentRouteName()",
-            "ref" => "characters",
-            "index" => "characters"
+            "ref" => "/",
+            "index" => "home"
         ],
         [
             "rotta" => "Route::currentRouteName()",
-            "ref" => "/", // Essendo attivo su comics al click dovrebbe riportare alla view Principale
+            "ref" => "comics", // Essendo attivo su comics al click dovrebbe riportare alla view Principale
             "index" => "comics"
         ],
         [

@@ -33,4 +33,13 @@ Route::get('/', function () {
     return view('layouts.app', compact('fumetti', 'icons', 'apps', 'dc_comics_list', 'dc_comics_shop', 'dc_termini', 'dc_sites', 'nav_links'));
 })->name('app');
 
+/* Rotta di prova (shop) */
+Route::get('/shop', function () {
+    return abort(404);
+})->name('shop');
+
+
+
+
+
 
