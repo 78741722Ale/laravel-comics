@@ -26,10 +26,11 @@ Route::get('/', function () {
     $dc_comics_shop = config('db.footer_list.dc_shop');
     $dc_termini = config('db.footer_list.dc_termini');
     $dc_sites = config('db.footer_list.dc_sites');
-    /* dd($dc_comics_list); */
+    $nav_links = config('db.navbar_list');
+    /* dd($nav_links); */
     /* dd($icons); */
     /* Icone del Footer */
-    return view('layouts.app', compact('fumetti', 'icons', 'apps', 'dc_comics_list', 'dc_comics_shop', 'dc_termini', 'dc_sites'));
+    return view('layouts.app', compact('fumetti', 'icons', 'apps', 'dc_comics_list', 'dc_comics_shop', 'dc_termini', 'dc_sites', 'nav_links'));
 })->name('app');
 
 

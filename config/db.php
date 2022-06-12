@@ -57,5 +57,12 @@ return  [
         'dc_termini' => ["Terms Of Use","Privacy policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"],
         'dc_sites' => ["DC","MAD Magazine","DC Kids","DC Universe","DC Power Visa"]
     ],
+    'navbar_list' => [
+        [
+            "rotta" => "Route::currentRouteName()",
+            "ref" => "home",
+            "index" => "Home"
+        ]
+    ]
 ];
 

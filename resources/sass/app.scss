@@ -143,7 +143,7 @@ $under_text_color : rgba(255, 255, 255, 1);
 /*#region SiteMain */
 
 /* Main Container Dimensions */
-#site_card { @include ContentDimensions(100%, 550px, $card_bg_color, $card_text_color); }
+#site_card { @include ContentDimensions(100%, 600px, $card_bg_color, $card_text_color); }
 #site_icon { @include ContentDimensions(100%, 115px, $icon_bg_color, $icon_text_color); }
 #site_jumbo {
     /* @include ContentDimensions(100%, 350px, $jumbo_bg_color, black); */

@@ -15,7 +15,13 @@
             <div class="row w-100 flex_bet m-0 h-100">
                 <!-- Col for Logo&Navbar&Searchbar-->
                 <div class="col-2 flex_cent_2 bg-warning h-100">logo</div>
-                <div class="col-7 flex_cent_2 bg-warning h-100">Navbar</div>
+                <div class="col-7 flex_cent_2 bg-warning h-100">
+                    <nav>
+                        @foreach ($nav_links as $single)
+                        <a class="nav-link {{$single['rotta']}} " href="{{$single['ref']}}">{{$single['index']}}</a>
+                        @endforeach
+                    </nav>
+                </div>
                 <div class="col-2 flex_cent_2 bg-warning h-100">Searchbar</div>
             </div>
         </div>
