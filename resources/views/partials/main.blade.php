@@ -1,6 +1,6 @@
 
 <div class="flex_cent">
-    <!-- Jumbotron -->
+    <!-- Jumbotron (OK FATTO) -->
     <div class="flex_cent" id="site_jumbo">
         <div class="container-xl h-100">
             <div class="row w-100 m-0 flex_cent_2 h-100">
@@ -11,16 +11,16 @@
     <!-- Site Cards -->
     <div class="flex_cent" id="site_card">
         <div class="container-xl h-100">
-            <div class="w-100 p-5 flex_around h-100 flex-wrap">
+            <div class="w-100 p-4 gap-3 flex_cent_2 h-100 flex-wrap">
                 <!-- Cards - Falle poi dinamiche (OK TIENILE COSI) -->
-                <div class="card mx-3 p-0" style="width: 11rem;">
+                @foreach ($fumetti as $fumetto)
+                <div class="card mx-2 p-0" style="width: 11rem;">
                     <!-- Immagine -->
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="Testo Dinamico">
+                    <img src="{{$fumetto['thumb']}}" class="card-img-top" alt="Testo Dinamico">
                     <!-- Text  -->
-                    <div class="card-body p-0 pt-1">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
+                    <h6 class="card-title ps-0 pt-1 pb-0 mb-0">{{$fumetto['series']}}</h6>
                 </div>
+                @endforeach
             </div>
         </div>
     </div>

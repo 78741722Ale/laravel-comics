@@ -10291,70 +10291,6 @@ body {
 * $height => Height of the container
 * $background => Background Color
 */
-/* All Container Dimensions */
-#site_additional {
-  width: 100%;
-  height: 20px;
-  background-color: rgb(2, 130, 249);
-  color: rgb(255, 255, 255);
-}
-
-#site_navbar {
-  width: 100%;
-  height: 85px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(75, 75, 74);
-}
-
-#site_card {
-  width: 100%;
-  height: 550px;
-  background-color: rgb(28, 28, 28);
-  color: rgb(255, 255, 255);
-}
-
-#site_icon {
-  width: 100%;
-  height: 115px;
-  background-color: rgb(2, 130, 249);
-  color: rgb(255, 255, 255);
-}
-
-#footer_under {
-  width: 100%;
-  height: 80px;
-  background-color: rgb(48, 48, 48);
-  color: rgb(255, 255, 255);
-}
-
-/* Container with background-img */
-#footer_upper {
-  width: 100%;
-  height: 425px;
-  color: rgb(255, 255, 255);
-  /* Background */
-  background-size: 100% 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  background-repeat: no-repeat;
-  background-image: url("../img/footer-bg.jpg");
-}
-
-#site_jumbo {
-  /* @include ContentDimensions(100%, 350px, $jumbo_bg_color, black); */
-  width: 100%;
-  height: 350px;
-  color: rgba(14, 230, 201, 0);
-  /* Background */
-  background-size: 100% 250%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  background-repeat: no-repeat;
-  background-image: url("../img/jumbotron.jpg");
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
 /*#endregion */
 /*#region Mixin Position Flex */
 /**
@@ -10483,10 +10419,92 @@ body {
 
 /*#endregion */
 /*#region SiteHeader */
+/* Header Container Dimensions */
+#site_additional {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(2, 130, 249);
+  color: rgb(255, 255, 255);
+}
+
+#site_navbar {
+  width: 100%;
+  height: 85px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(75, 75, 74);
+}
+
 /*#endregion */
 /*#region SiteMain */
+/* Main Container Dimensions */
+#site_card {
+  width: 100%;
+  height: 550px;
+  background-color: rgb(28, 28, 28);
+  color: rgb(255, 255, 255);
+}
+
+#site_icon {
+  width: 100%;
+  height: 115px;
+  background-color: rgb(2, 130, 249);
+  color: rgb(255, 255, 255);
+}
+
+#site_jumbo {
+  /* @include ContentDimensions(100%, 350px, $jumbo_bg_color, black); */
+  width: 100%;
+  height: 350px;
+  color: rgba(14, 230, 201, 0);
+  /* Background */
+  background-size: 100% 250%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/jumbotron.jpg");
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.card {
+  background-color: transparent !important;
+  height: 230px !important;
+  /* Immagine contenente la series */
+}
+.card img {
+  width: 100%;
+  max-height: 200px;
+}
+.card h6 {
+  text-align: left;
+  height: 30px !important;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
 /*#endregion */
 /*#region SiteFooter */
+/* Footer Container Dimensions */
+#footer_under {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(48, 48, 48);
+  color: rgb(255, 255, 255);
+}
+
+/* Container with background-img */
+#footer_upper {
+  width: 100%;
+  height: 425px;
+  color: rgb(255, 255, 255);
+  /* Background */
+  background-size: 100% 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/footer-bg.jpg");
+}
+
 .follow {
   font-weight: 900;
   text-decoration: none;
