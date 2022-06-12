@@ -11,10 +11,10 @@
     <!-- Site Cards -->
     <div class="flex_cent" id="site_card">
         <div class="container-xl h-100">
-            <div class="w-100 bordo p-5 gap-2 flex_cent_2 h-100 flex-wrap">
+            <div class="w-100 p-5 gap-2 flex_cent_2 h-100 flex-wrap">
                 <!-- Cards - Falle poi dinamiche (OK TIENILE COSI MA AGGIUNGI ANCOR TAG) -->
                 @foreach ($fumetti as $fumetto)
-                <div class="card mx-2 p-0" style="width: 10.5rem;">
+                <div class="card border-0 mx-2 p-0" style="width: 10.5rem;">
                     <!-- Immagine -->
                     <img src="{{$fumetto['thumb']}}" class="card-img-top" alt="Testo Dinamico">
                     <!-- Text  -->

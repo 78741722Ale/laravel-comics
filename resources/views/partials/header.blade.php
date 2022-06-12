@@ -20,9 +20,10 @@
                 </div>
                 <!-- Navbar -->
                 <div class="col-9 h-100">
-                    <ul class="flex_evenly h-100 bordo">
+                    <ul class="flex_evenly h-100">
                         @foreach ($nav_links as $element)
-                        <li><a class="{{$element['rotta']}} " href="{{$element['ref']}}">{{$element['index']}}</a></li>
+                        <!-- Sacrificato $element['rotta'] x Index, solo per attivare classe attiva su comics -->
+                        <li><a class="{{ $element['index'] === 'comics' ?  'active' : ''}}" href="{{$element['ref']}}">{{$element['index']}}</a></li>
                         @endforeach
                     </ul>
                 </div>

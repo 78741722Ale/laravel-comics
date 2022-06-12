@@ -65,7 +65,7 @@ return  [
         ],
         [
             "rotta" => "Route::currentRouteName()",
-            "ref" => "comics",
+            "ref" => "/", // Essendo attivo su comics al click dovrebbe riportare alla view Principale
             "index" => "comics"
         ],
         [

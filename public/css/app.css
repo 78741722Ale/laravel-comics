@@ -10440,7 +10440,11 @@ body {
 }
 
 .col-9 {
+  /* List */
   /* List item */
+  /* Ancor Tag */
+  /* Effect on Hover */
+  /* Active Class */
 }
 .col-9 ul {
   list-style: none;
@@ -10458,6 +10462,10 @@ body {
   padding-bottom: 1.8rem;
 }
 .col-9 a:hover {
+  border-bottom: 5px solid rgb(2, 130, 249);
+  color: rgb(2, 130, 249);
+}
+.col-9 .active {
   border-bottom: 5px solid rgb(2, 130, 249);
   color: rgb(2, 130, 249);
 }

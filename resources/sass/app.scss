@@ -148,14 +148,16 @@ $under_text_color : rgba(255, 255, 255, 1);
 }
 
 .col-9 {
-    /* List item */
+    /* List */
     ul {
         list-style: none;
     }
+    /* List item */
     li {
         padding-left: 0;
         margin-bottom: 0;
     }
+    /* Ancor Tag */
     a {
         text-decoration: none;
         text-transform: uppercase;
@@ -164,7 +166,13 @@ $under_text_color : rgba(255, 255, 255, 1);
         font-weight: 700;
         padding-bottom: 1.8rem;
     }
+    /* Effect on Hover */
     a:hover {
+        border-bottom: 5px solid $additional_bg_color;
+        color: $additional_bg_color;
+    }
+    /* Active Class */
+    .active {
         border-bottom: 5px solid $additional_bg_color;
         color: $additional_bg_color;
     }
